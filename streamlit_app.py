@@ -156,7 +156,7 @@ if 'combined_df' in locals() and not combined_df.empty:
         ax.plot(combined_df.index, combined_df['no'], label='Hourly NO2', color='tab:purple', alpha=0.6, zorder=1)
         if combined_df['no2_24hr_rolling_max'].notna().any():
             ax.plot(combined_df.index, combined_df['no2_24hr_rolling_max'], label='24-hr rolling max', color='tab:orange', linewidth=2, zorder=2)
-            threshold_no2 = 40
+            threshold_no2 = 20
             above_no2 = combined_df[combined_df['no2_24hr_rolling_max'] > threshold_no2]
             if not above_no2.empty:
                 ax.scatter(above_no2.index, above_no2['no2_24hr_rolling_max'], color='red', s=50,
