@@ -1,4 +1,4 @@
-# 🎈 Blank app template
+# 🎈 NAIROBI AIR POLLUTION MONITORING FRAMEWORK
 
 A simple Streamlit app template for you to modify!
 
